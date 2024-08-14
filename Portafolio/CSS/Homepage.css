@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #003D7A;
+    
     color: white;
 }
 
@@ -49,6 +49,9 @@ body {
 
 .home {
     height: 100vh;
+    background: url('imgs\backgroud.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -158,14 +161,29 @@ body {
     border-radius: 50%;
     color: #C08D2C;
     text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 }
+
+.home-sci a:hover {
+    color: #003D7A;
+}
+
 
 .home-sci a::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
+    background: #C08D2C;
     z-index: -1;
+    transition: .5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
 }
