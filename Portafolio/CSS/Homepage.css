@@ -9,11 +9,8 @@
 }
 
 body {
-    
     color: white;
 }
-
-
 
 .header {
     position: fixed;
@@ -21,7 +18,6 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,12 +45,13 @@ body {
 
 .home {
     height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background: url('../imgs/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
+    
 }
 
 .home-content {
