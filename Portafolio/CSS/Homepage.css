@@ -704,6 +704,10 @@ span {
         display: block;
     }
 
+    .home {
+        background: #003D7A;
+    }
+
     .navbar {
         position: absolute;
         top: 100%;
