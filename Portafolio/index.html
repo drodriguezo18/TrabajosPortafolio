@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/logoicon.png">
     <link rel="stylesheet" href="CSS\Homepage.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -36,13 +37,13 @@
                 dedicado al desarrollo front-end, con
                 experiencia en JavaScript, C#, Java y SQL.</p>
             <div class="btn-box">
-                <a href="https://github.com/drodriguezo18/TrabajosPortafolio/blob/main/Portafolio/CVs/CV%20Español.pdf" download class="btn">Curriculum</a>
-                <a href="#" class="btn">Idioma</a>
+                <a href="/CVs/CV Español.pdf" class="btn" download="CV">Curriculum</a>
+                <button class="btn">Idioma</button>
             </div>
         </div>
 
         <div class="home-sci">
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://wa.me/85579811"><i class='bx bxl-whatsapp'></i></a>
             <a href="https://github.com/drodriguezo18"><i class='bx bxl-github'></i></a>
             <a href="https://www.linkedin.com/in/daniel-rodriguez-637078314/"><i class='bx bxl-linkedin'></i></a>
         </div>
@@ -192,36 +193,38 @@
      <section class="contact" id="contact">
         <h2 class="heading">Contacto</h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="post">
+
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Nombre Completo" required>
+                    <input type="hidden" name="access_key" value="ca515190-75c9-4af4-bbb4-7aafd7ff66d2">
+                    <input type="text" name="name" placeholder="Nombre Completo" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Correo Electronico" required>
+                    <input type="text" name="email" placeholder="Correo Electronico" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Telefono" required>
+                    <input type="number" name="phone" placeholder="Telefono" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Asunto" required>
+                    <input type="text" name="subject" placeholder="Asunto" required>
                     <span class="focus"></span>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
                 <span class="focus"></span>
             </div>
 
             <div class="btn-box btns">
-                <button type="submit" class="btn">Envia</button>
+                <button type="submit" class="btn">Enviar</button>
             </div>
         </form>
      </section>
